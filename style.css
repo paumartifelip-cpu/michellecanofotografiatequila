@@ -298,14 +298,14 @@ body {
 }
 
 /* Specific grids layout positioning */
-.photocard { grid-column: 3; grid-row: 1; }
-.videocard-1 { grid-column: 4; grid-row: 1; }
-.image-card { grid-column: 3; grid-row: 2; }
-.videocard-2 { grid-column: 4; grid-row: 2; }
-.rawcard { grid-column: 4; grid-row: 2; } /* Wait, rawcard need space. */
-
-/* Let's refine grid spans slightly for variety */
-.videocard-2 { grid-column: 4; grid-row: 2; }
+/* Replacing explicit rigid placements with flexible spans to prevent overlap */
+.photocard, .videocard-1, .videocard-2, .rawcard { 
+    grid-column: span 1; 
+}
+.image-card { 
+    grid-column: span 1; 
+    grid-row: span 2; 
+}
 
 /* Equipment Card */
 .equipment-card {
@@ -366,6 +366,7 @@ body {
     gap: 10px;
     margin-bottom: 1rem;
     transform: translateZ(20px);
+    justify-content: center;
 }
 .tag {
     background: rgba(255,255,255,0.1);
@@ -394,6 +395,7 @@ body {
 .price-subtitle {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     color: var(--text-muted);
     margin-bottom: 2rem;
@@ -419,19 +421,47 @@ body {
 
 /* Responsiveness */
 @media (max-width: 1100px) {
-    .bento-grid { grid-template-columns: repeat(2, 1fr); }
-    .hero-card { grid-column: span 2; }
-    .equipment-card { grid-column: span 2; }
-    .investment-card { grid-column: span 2; }
-    .image-card { grid-column: span 1; grid-row: span 1;}
+    .bento-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .hero-card, 
+    .equipment-card, 
+    .investment-card { 
+        grid-column: span 2; 
+    }
+    .image-card { 
+        grid-row: span 1; 
+    }
 }
 
 @media (max-width: 768px) {
-    .bento-grid { grid-template-columns: 1fr; }
-    .hero-card { grid-column: 1; }
-    .equipment-card { grid-column: 1; }
-    .investment-card { grid-column: 1; }
-    .clean-list { grid-template-columns: 1fr; }
-    .bg-typography { font-size: 40vw; }
-    .nav-links { display: none; }
+    .bento-grid { 
+        grid-template-columns: 1fr; 
+    }
+    .hero-card, 
+    .equipment-card, 
+    .investment-card,
+    .photocard, 
+    .videocard-1, 
+    .videocard-2, 
+    .rawcard,
+    .image-card { 
+        grid-column: 1; 
+        grid-row: auto; 
+    }
+    .clean-list { 
+        grid-template-columns: 1fr; 
+    }
+    .bg-typography { 
+        font-size: 40vw; 
+    }
+    .nav-links { 
+        display: none; 
+    }
+    .hero-card h1 {
+        font-size: 2.5rem;
+    }
+    .amount {
+        font-size: 4.5rem;
+    }
 }
