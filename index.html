@@ -4,123 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Proposal | Micasa Photography</title>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero slide-up">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <p class="subtitle">Prepared Exclusively for</p>
-            <h1 class="client-name">Michael Griffinv</h1>
-            <div class="divider"></div>
-            <p class="agency-name">By Micasa Photography</p>
-        </div>
-    </section>
-
-    <!-- Scope Section -->
-    <section class="section scope slide-up">
-        <div class="container">
-            <div class="section-header">
-                <h2>Project Scope</h2>
-                <p>Capturing the essence and craft of your premium tequila.</p>
+    <!-- Massive background text (Editorial inspiration) -->
+    <div class="bg-typography">AGAVE</div>
+    <div class="bg-typography back">MICASA</div>
+    
+    <!-- Decorative blurred orbs (Neon/Glassmorphism inspiration) -->
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    
+    <div class="main-wrapper">
+        <header class="glass-header">
+            <div class="logo">Micasa Photography</div>
+            <div class="nav-links">
+                <span>Proposal</span>
+                <span>Portfolio</span>
+                <span>Contact</span>
             </div>
+            <div class="profile-chip">
+                <img src="https://ui-avatars.com/api/?name=Michael+Griffinv&background=random" alt="Client Avatar">
+                <span>Michael</span>
+            </div>
+        </header>
+
+        <main class="bento-grid">
             
-            <div class="deliverables-grid">
-                
-                <!-- Deliverable 1 -->
-                <div class="card">
-                    <i data-lucide="camera" class="icon"></i>
-                    <h3>100+ Edited Photos</h3>
-                    <p>Minimum of 100 high-resolution edited photos (potentially more if exceptional shots arise). This includes the detailed tequila bottling process and individual presentation shots of the tequila alone.</p>
-                </div>
-
-                <!-- Deliverable 2 -->
-                <div class="card">
-                    <i data-lucide="video" class="icon"></i>
-                    <h3>Full HD Vertical Video</h3>
-                    <p>1 professionally captured and edited vertical Full HD video showcasing the tequila presentation. Perfectly formatted for reels, shorts, and stories.</p>
-                </div>
-
-                <!-- Deliverable 3 -->
-                <div class="card">
-                    <i data-lucide="film" class="icon"></i>
-                    <h3>Full HD Horizontal Video</h3>
-                    <p>1 high-quality horizontal Full HD video documenting the detailed and authentic process of tequila bottling.</p>
-                </div>
-
-                <!-- Deliverable 4 -->
-                <div class="card">
-                    <i data-lucide="download-cloud" class="icon"></i>
-                    <h3>Raw Video Footage</h3>
-                    <p>Complete access to the raw video files of the bottling process and product presentation for your limitless manipulation and continuous social media use.</p>
-                </div>
+            <!-- Hero / Intro Card -->
+            <div class="glass-card tilt-card hero-card">
+                <div class="card-tag">Exclusive Proposal</div>
+                <h1>Capturing the Essence of Tequila</h1>
+                <p>A comprehensive photography and videography package bringing your bottling process to life.</p>
+                <button class="primary-btn">
+                    <span>Explore Scope</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </button>
+                <img src="assets/tequila-hero.png" alt="Tequila Background" class="hero-bg-img">
             </div>
-        </div>
-    </section>
 
-    <!-- Equipment Section -->
-    <section class="section equipment slide-up">
-        <div class="container equipment-container">
-            <div class="text-content">
-                <h2>Professional Equipment</h2>
-                <p>We believe in delivering superior quality by utilizing industry-standard professional gear.</p>
-                <ul class="equipment-list">
-                    <li><i data-lucide="check-circle-2"></i> Canon 90D Full HD Camera</li>
-                    <li><i data-lucide="check-circle-2"></i> External Interchangeable Lenses</li>
-                    <li><i data-lucide="check-circle-2"></i> High-Speed Recording Cards</li>
-                    <li><i data-lucide="check-circle-2"></i> Professional External Flash System</li>
+            <!-- Deliverable: Photos -->
+            <div class="glass-card tilt-card content-card photocard">
+                <div class="icon-circle">
+                    <i data-lucide="camera"></i>
+                </div>
+                <h3>100+ Photos</h3>
+                <p>Fully edited process & presentation shots.</p>
+            </div>
+
+            <!-- Deliverable: vertical Video -->
+            <div class="glass-card tilt-card content-card videocard-1">
+                <div class="icon-circle">
+                    <i data-lucide="smartphone"></i>
+                </div>
+                <h3>Vertical Video</h3>
+                <p>Full HD for Social Media Reels.</p>
+            </div>
+
+            <!-- Focus Image Box -->
+            <div class="glass-card tilt-card image-card">
+                <!-- Using an abstract style or the user's placeholder -->
+                 <div class="image-inner">
+                    <div class="play-btn">
+                        <i data-lucide="play"></i>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Deliverable: horizontal Video -->
+            <div class="glass-card tilt-card content-card videocard-2">
+                <div class="icon-circle">
+                    <i data-lucide="monitor-play"></i>
+                </div>
+                <h3>Horizontal HD</h3>
+                <p>Full HD process documentary video.</p>
+            </div>
+
+             <!-- Deliverable: Raw Footage -->
+             <div class="glass-card tilt-card content-card rawcard">
+                <div class="icon-circle">
+                    <i data-lucide="folder-open"></i>
+                </div>
+                <h3>Raw Footage</h3>
+                <p>Full access for limitless manipulation.</p>
+            </div>
+
+            <!-- Equipment Section -->
+            <div class="glass-card tilt-card equipment-card">
+                <div class="card-header">
+                    <h3>Equipment</h3>
+                    <i data-lucide="cpu"></i>
+                </div>
+                <ul class="clean-list">
+                    <li><span>Camera</span>Canon 90D Full HD</li>
+                    <li><span>Lenses</span>Interchangeable Range</li>
+                    <li><span>Lighting</span>Professional Flash</li>
+                    <li><span>Media</span>High-Speed Cards</li>
                 </ul>
             </div>
-            <div class="image-content">
-                <div class="lens-design"></div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Investment Section -->
-    <section class="section investment slide-up">
-        <div class="container">
-            <div class="section-header">
-                <h2>Investment Summary</h2>
-                <p>A transparent and comprehensive package tailored to your brand.</p>
-            </div>
-            
-            <div class="pricing-card">
-                <div class="price-header">
-                    <h3>Total Proposal</h3>
-                    <div class="price">$400 <span class="currency">USD</span></div>
-                    <p class="hourly-note">Valued at an hourly rate of $100 USD</p>
+            <!-- Investment Section -->
+            <div class="glass-card tilt-card investment-card">
+                <div class="tag-row">
+                    <span class="tag">Travel Included</span>
+                    <span class="tag">Taxes Included</span>
                 </div>
-                <div class="price-includes">
-                    <h4>What's Included:</h4>
-                    <ul>
-                        <li><i data-lucide="check"></i> All promised photography & videography deliverables</li>
-                        <li><i data-lucide="check"></i> Full editing & post-production</li>
-                        <li><i data-lucide="check"></i> Travel expenses (viáticos) to Tequila</li>
-                        <li><i data-lucide="check"></i> All applicable taxes</li>
-                    </ul>
+                <h3>Investment</h3>
+                <div class="price-display">
+                    <span class="currency">$</span>
+                    <span class="amount">400</span>
+                    <span class="iso">USD</span>
                 </div>
+                <div class="price-subtitle">
+                    <i data-lucide="clock"></i>
+                    <span>Valued at $100/hr</span>
+                </div>
+                <button class="approve-btn">Approve Proposal</button>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <h2 class="footer-logo">Micasa Photography</h2>
-            <p>Elevating brands through visual storytelling.</p>
-            <div class="footer-divider"></div>
-            <p class="copyright">&copy; 2026 Micasa Photography. All rights reserved.</p>
-        </div>
-    </footer>
+        </main>
+    </div>
 
     <script>
         lucide.createIcons();
